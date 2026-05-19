@@ -173,12 +173,6 @@
         <mxCell id="1lHYVTvji7b0VrMddPGj-98" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="1lHYVTvji7b0VrMddPGj-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="1lHYVTvji7b0VrMddPGj-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1lHYVTvji7b0VrMddPGj-99" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Integração Sync Informação PENDING" vertex="1">
-          <mxGeometry height="30" width="60" x="660" y="110" as="geometry" />
-        </mxCell>
-        <mxCell id="1lHYVTvji7b0VrMddPGj-100" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="1lHYVTvji7b0VrMddPGj-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="1lHYVTvji7b0VrMddPGj-99">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
