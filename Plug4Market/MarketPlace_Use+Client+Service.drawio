@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1212" dy="1922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1594" dy="1878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -97,7 +97,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="1lHYVTvji7b0VrMddPGj-40" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=default;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=default;strokeColor=light-dark(#000000,#33FFFF);" value="ProductPort" vertex="1">
-          <mxGeometry height="156" width="420" x="810" y="-116" as="geometry">
+          <mxGeometry height="182" width="420" x="810" y="-116" as="geometry">
             <mxRectangle height="30" width="100" x="160" y="290" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -115,6 +115,9 @@
         </mxCell>
         <mxCell id="1lHYVTvji7b0VrMddPGj-46" parent="1lHYVTvji7b0VrMddPGj-40" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ MarketPlaceResult deleteProduct(DeleteProductInput)" vertex="1">
           <mxGeometry height="26" width="420" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-vOzM2DtGxmbXtRakhtm-0" parent="1lHYVTvji7b0VrMddPGj-40" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ void resolve(SaleChannelProduto)" vertex="1">
+          <mxGeometry height="26" width="420" y="156" as="geometry" />
         </mxCell>
         <mxCell id="1lHYVTvji7b0VrMddPGj-51" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=light-dark(#FFFFFF,#000000);horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillStyle=solid;swimlaneFillColor=default;" value="UseCase" vertex="1">
           <mxGeometry height="52" width="200" x="2220" y="-20" as="geometry">
