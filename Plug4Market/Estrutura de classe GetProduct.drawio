@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="rbPAJZLacyDmk1sT8ckn">
+    <mxGraphModel dx="1443" dy="1006" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="54" pageHeight="134" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=18;" value="&lt;b&gt;API Externa&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;(Plug4, TikTok, Amazon...)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="270" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="plug4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=10;fillColor=#f5f5f5;strokeColor=#cccccc;" value="&lt;b&gt;Plug4GetProductResponse&lt;/b&gt;&lt;hr&gt;+ remoteId&lt;br&gt;+ name&lt;br&gt;+ active&lt;br&gt;+ sku&lt;br&gt;+ salesChannels&lt;br&gt;+ salesChannelStatus&lt;br&gt;+ stock&lt;br&gt;+ price" vertex="1">
+          <mxGeometry height="260" width="260" x="45" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="mapper" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=center;" value="&lt;b&gt;Plug4ProductMapper&lt;/b&gt;&lt;hr&gt;toGetProductResult()" vertex="1">
+          <mxGeometry height="80" width="200" x="351" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="internalTitle" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=18;" value="&lt;b&gt;MarketplaceService&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;Modelo Canônico&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="300" x="594" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=10;fillColor=#e1f5fe;strokeColor=#039be5;" value="&lt;b&gt;GetProductResult&lt;/b&gt;&lt;hr&gt;+ remoteId&lt;br&gt;+ name&lt;br&gt;+ active&lt;br&gt;+ List&amp;lt;SalesChannelDTO&amp;gt;&lt;br&gt;+ SalesChannelStatus&lt;br&gt;+ stock&lt;br&gt;+ price&lt;br&gt;+ productIdentifier" vertex="1">
+          <mxGeometry height="260" width="300" x="594" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="sales" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=10;fillColor=#e1f5fe;strokeColor=#039be5;" value="&lt;b&gt;SalesChannelDTO&lt;/b&gt;&lt;hr&gt;+ id&lt;br&gt;+ name" vertex="1">
+          <mxGeometry height="120" width="140" x="459" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="status" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=10;fillColor=#e1f5fe;strokeColor=#039be5;" value="&lt;b&gt;SalesChannelStatus&lt;/b&gt;&lt;br&gt;&lt;i&gt;(enum)&lt;/i&gt;&lt;hr&gt;PENDING&lt;br&gt;UNAVAILABLE&lt;br&gt;ACTIVE" vertex="1">
+          <mxGeometry height="120" width="140" x="894" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="grpcMapper" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=center;" value="&lt;b&gt;GrpcProductMapper&lt;/b&gt;&lt;hr&gt;toGrpc()" vertex="1">
+          <mxGeometry height="80" width="200" x="934" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="grpcTitle" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=18;" value="&lt;b&gt;Contrato gRPC&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="1210" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="grpc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=10;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;GetProductResponse&lt;/b&gt;&lt;hr&gt;+ remoteId&lt;br&gt;+ name&lt;br&gt;+ active&lt;br&gt;+ repeated SalesChannel&lt;br&gt;+ salesChannelStatus&lt;br&gt;+ stock&lt;br&gt;+ price&lt;br&gt;+ productIdentifier" vertex="1">
+          <mxGeometry height="260" width="290" x="1210" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="plug4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" target="mapper">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="mapper" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" target="result">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="result" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" target="grpcMapper">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="grpcMapper" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" target="grpc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="result" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;dashed=1;" target="sales">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="result" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;dashed=1;" target="status">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="plug4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="internalTitle" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;dashed=1;" target="result">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="grpcTitle" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;dashed=1;" target="grpc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
